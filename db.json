@@ -1,0 +1,138 @@
+{
+  "Lists": [
+    {
+      "id": "1",
+      "name": "idreeskema",
+      "address": "sopore",
+      "email": "kema@gmail.com",
+      "mobile": 8754567
+    },
+    {
+      "id": "2",
+      "name": "javid",
+      "email": "javid@gmail.com",
+      "mobile": "855623456",
+      "address": "srinagar"
+    },
+    {
+      "id": "3",
+      "name": "mudasir",
+      "email": "soproe@gmail.com",
+      "mobile": "876543567",
+      "address": "sopore"
+    },
+    {
+      "id": 4,
+      "name": "huzaif",
+      "email": "sopore@gmail.com",
+      "mobile": "2345676654",
+      "address": "sopore"
+    },
+    {
+      "id": 5,
+      "name": "idrees",
+      "email": "idreeskema@icloud.com",
+      "mobile": "2345678987",
+      "address": "sopore"
+    },
+    {
+      "id": 6,
+      "name": "junaid",
+      "email": "junaid@gmail.com",
+      "mobile": "7654546788",
+      "address": "sopore"
+    },
+    {
+      "id": 7,
+      "name": "javid",
+      "email": "javed@gmail.com",
+      "mobile": "2345767767",
+      "address": "kashmir"
+    },
+    {
+      "id": 8,
+      "name": "idrees",
+      "email": "kema@gmail.com",
+      "mobile": "875456",
+      "address": "sopore"
+    },
+    {
+      "id": 9,
+      "name": "javid",
+      "email": "javid@gmail.com",
+      "mobile": "855623456",
+      "address": "srinagar"
+    },
+    {
+      "id": 10,
+      "name": "mudasir",
+      "email": "soproe@gmail.com",
+      "mobile": "876543567",
+      "address": "sopore"
+    },
+    {
+      "id": 11,
+      "name": "huzaif",
+      "email": "sopore@gmail.com",
+      "mobile": "2345676654",
+      "address": "sopore"
+    },
+    {
+      "id": 12,
+      "name": "idrees",
+      "email": "idreeskema@icloud.com",
+      "mobile": "2345678987",
+      "address": "sopore"
+    },
+    {
+      "id": 13,
+      "name": "junaid",
+      "email": "junaid@gmail.com",
+      "mobile": "7654546788",
+      "address": "sopore"
+    },
+    {
+      "id": 14,
+      "name": "javid",
+      "email": "javed@gmail.com",
+      "mobile": "2345767767",
+      "address": "kashmir"
+    },
+    {
+      "id": 15,
+      "name": "jack",
+      "email": "jack@gmail.com",
+      "mobile": "8765435676",
+      "address": "sopore"
+    },
+    {
+      "id": 16,
+      "name": "junaid",
+      "email": "sopore@gmail.com",
+      "mobile": "8987676556",
+      "address": "sopore"
+    },
+    {
+      "id": 20,
+      "name": "bilal",
+      "address": "usa",
+      "email": "bilal@gmail.com",
+      "mobile": "9876546787"
+    },
+    {
+      "id": 19,
+      "name": "aarif",
+      "email": "mail@aarif.com",
+      "mobile": "8491813135",
+      "address": "sopore"
+    },
+    {
+      "id": 21,
+      "name": "idreesshah",
+      "email": "srinagar@gmail.com",
+      "mobile": "324567788",
+      "address": "srinagar"
+    }
+  ]
+  
+}

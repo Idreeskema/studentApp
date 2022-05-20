@@ -1,0 +1,112 @@
+<div>
+  <H1>{{ this.id ? this.updateTitle : this.addTitle }}</H1>
+</div>
+<div class="form1">
+  <form
+    class="example-form"
+    #formDirective="ngForm"
+    [formGroup]="addStudent"
+    novalidate
+    (ngSubmit)="submit()"
+  >
+    <table class="example-full-width" cellspacing="0">
+      <tr>
+        <td>
+          <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>RollNo</mat-label>
+            <input type="number" matInput formControlName="id" />
+            <mat-error *ngIf="hasError('id', 'required')"
+              >RollNo is required</mat-error
+            >
+            <mat-error *ngIf="hasError('id', 'maxLength')"
+              >You have more than 2 Digits</mat-error
+            >
+          </mat-form-field>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>Name</mat-label>
+            <input matInput formControlName="name" />
+            <mat-error *ngIf="hasError('name', 'required')"
+              >Name is required</mat-error
+            >
+            <mat-error *ngIf="hasError('name', 'maxlength')"
+              >You have more than 10 characters</mat-error
+            >
+          </mat-form-field>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>Address</mat-label>
+            <input
+              matInput
+              ngx-google-places-autocomplete
+              formControlName="address"
+              [options]="options"
+              #placesRef="ngx-places"
+              (onAddressChange)="handleAddressChange($event)"
+            />
+            <!-- <input matInput formControlName="address"> -->
+            <mat-error *ngIf="hasError('address', 'required')"
+              >Address is required</mat-error
+            >
+            <mat-error *ngIf="hasError('address', 'maxlength')"
+              >You have more than 10 characters</mat-error
+            >
+          </mat-form-field>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>Email</mat-label>
+            <input
+              matInput
+              formControlName="email"
+              placeholder="Ex. pat@example.com"
+            />
+            <mat-error *ngIf="hasError('email', 'required')">
+              Email is <strong>required</strong></mat-error
+            >
+            <mat-error *ngIf="hasError('email', 'pattern')"
+              >Please enter a valid email address</mat-error
+            >
+          </mat-form-field>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>Mobile No</mat-label>
+            <input
+              type="tel"
+              matInput
+              formControlName="mobile"
+              placeholder="555-555-1234"
+            />
+
+            <mat-error *ngIf="hasError('mobile', 'required')"
+              >Mobile No is required</mat-error
+            >
+            <mat-error *ngIf="hasError('mobile', 'maxlength')"
+              >You have more than 10 Digits</mat-error
+            >
+          </mat-form-field>
+        </td>
+      </tr>
+      <button
+        mat-stroked-button
+        color="primary"
+        (click)="openSnackbar(message, 'Ok')"
+        [disabled]="!addStudent.value.mobile"
+      >
+        {{ this.id ? this.updateButton : this.addButton }}
+      </button>
+    </table>
+  </form>
+</div>

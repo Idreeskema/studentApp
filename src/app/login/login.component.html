@@ -1,0 +1,52 @@
+<div class="back">
+    <div class="box">
+
+        <mat-card class="example-card">
+            <mat-card-header>
+                <div mat-card-avatar class="example-header-image"></div>
+                <mat-card-title>Log In</mat-card-title>
+
+            </mat-card-header>
+            <mat-card-content>
+                <div class="form">
+                    <form [formGroup]="login" (ngSubmit)="Login()">
+                        <table class="example-full-width" cellspacing="0">
+                            <tr>
+                                <td class ="data">
+                                    <mat-form-field class="example-full-width" appearance="fill">
+                                        <mat-label>User Name</mat-label>
+                                        <input type="text" matInput formControlName="email">
+
+
+                                    </mat-form-field>
+                                </td>
+                            <tr>
+                                <td>
+                                    <mat-form-field class="example-full-width" appearance="fill">
+                                        <mat-label>Password</mat-label>
+                                        <input matInput formControlName="password">
+
+                                    </mat-form-field>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td >
+                                    <ngx-recaptcha2 class="g-recaptcha" (load)="handleLoad()"required #captchaElem [siteKey]="siteKey" [size]="'normal'"
+                                    [hl]="'en'"
+                                    [theme]="'light'"[formControlName]="'recaptcha'" (success)="handleSuccess($event)">
+                                    </ngx-recaptcha2>
+                                </td>
+                            </tr>
+                            <button class="btn" mat-stroked-button color="primary" [disabled]="login.invalid"><span>Login</span></button>
+                        </table>
+                    </form>
+                </div>
+                <div class="tag">
+                    <p>&#10084; Designed By <a href="https://imidrees.cf" target="_blank">Idrees Kema</a>
+                    <p>
+                </div>
+            </mat-card-content>
+        </mat-card>
+    </div>
+
+</div>

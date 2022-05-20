@@ -1,0 +1,18 @@
+<div class="main">
+  <h1>Students Chart</h1>
+
+  <google-chart
+    [type]="myType"
+    [data]="myData"
+    [width]="width"
+    [height]="height"
+    [options]="options"
+    [dynamicResize]="dynmaicResize"
+  >
+  </google-chart>
+</div>
+<app-camera (getPicture)="handleImage($event)"></app-camera>
+
+<div class="webcam-image" *ngIf="webcamImage">
+  <img [src]="webcamImage.imageAsDataUrl" />
+</div>

@@ -1,0 +1,79 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <button
+      mat-icon-button
+      (click)="sidenav.toggle()"
+      fxShow="true"
+      fxHide.gt-sm
+    >
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span>My Application</span>
+    <span class="example-spacer"></span>
+    <div fxShow="true" fxHide.lt-md="true">
+      <!-- The following menu items will be hidden on both SM and XS screen sizes -->
+      <a routerLink="/add" mat-button>
+        <mat-icon>note_add</mat-icon>
+        Add Student
+      </a>
+      <a routerLink="/Lists" mat-button>
+        <mat-icon>chrome_reader_mode</mat-icon>
+        View Students
+      </a>
+      <a routerLink="/graphs" mat-button>
+        <mat-icon>map</mat-icon>
+        graph
+      </a>
+      <a routerLink="/camera" mat-button>
+        <mat-icon>camera</mat-icon>
+        Camera
+      </a>
+      <a routerLink="/login" (click)="logout()" mat-button>
+        <mat-icon>arrow_right_alt</mat-icon>
+        Logout
+      </a>
+    </div>
+  </mat-toolbar-row>
+</mat-toolbar>
+
+<mat-sidenav-container fxFlexFill>
+  <mat-sidenav #sidenav>
+    <mat-nav-list>
+      <a routerLink="/add" mat-list-item>
+        <mat-icon>note_add</mat-icon>
+        Add Student
+      </a>
+      <a routerLink="/Lists" mat-list-item>
+        <mat-icon>chrome_reader_mode</mat-icon>
+        View Students</a
+      >
+      <a href="#" mat-list-item>
+        <mat-icon>arrow_right_alt</mat-icon>
+        Logout
+      </a>
+      <a routerLink="/login" (click)="logout()" mat-list-item>
+        <mat-icon>lock</mat-icon>
+        My Account
+      </a>
+      <a (click)="sidenav.toggle()" mat-list-item>
+        <mat-icon>close</mat-icon> Close
+      </a>
+    </mat-nav-list>
+  </mat-sidenav>
+
+  <!-- <mat-sidenav-content fxFlexFill>Main content</mat-sidenav-content> -->
+</mat-sidenav-container>
+
+<!-- <p>
+    <mat-toolbar>
+      <span class="home" routerLink="/">My Application</span>
+  
+      <span class="example-spacer"></span>
+      <a mat-button routerLink="/add">Add Student</a>
+      <a mat-button routerLink="/Lists" >View Students</a>
+      <a mat-button routerLink="/update" >Update</a> -->
+<!-- <a mat-button routerLink="/login" (click)="logout()">Logout</a> -->
+
+<!-- </mat-toolbar> -->
+
+<!-- </p> -->
