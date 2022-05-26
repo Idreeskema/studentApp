@@ -11,6 +11,7 @@ import { BlankLayoutComponent } from './layout/blank-layout/blank-layout.compone
 import { MainLayoutComponent } from './layout/main-layout/main-layout.component';
 import { GChartComponent } from './g-chart/g-chart.component';
 import { CameraComponent } from './camera/camera.component';
+import { OrgchartComponent } from './orgchart/orgchart.component';
 const routes: Routes = [
   {
     path: 'login',
@@ -35,6 +36,11 @@ const routes: Routes = [
       {
         component: GChartComponent,
         path: 'graphs',
+        canActivate: [AuthGuard],
+      },
+      {
+        component: OrgchartComponent,
+        path: 'orgchart',
         canActivate: [AuthGuard],
       },
       {

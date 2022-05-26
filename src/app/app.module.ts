@@ -36,6 +36,8 @@ import { GChartComponent } from './g-chart/g-chart.component';
 import { GoogleChartsModule } from 'angular-google-charts';
 import { WebcamModule } from 'ngx-webcam';
 import { CameraComponent } from './camera/camera.component';
+import { OrgchartComponent } from './orgchart/orgchart.component';
+import { NgxOrgChartModule } from 'ngx-org-chart';
 @NgModule({
   declarations: [
     AppComponent,
@@ -50,6 +52,7 @@ import { CameraComponent } from './camera/camera.component';
     FooterComponent,
     GChartComponent,
     CameraComponent,
+    OrgchartComponent,
   ],
   imports: [
     BrowserModule,
@@ -76,7 +79,8 @@ import { CameraComponent } from './camera/camera.component';
     MatIconModule,
     MatListModule,
     GoogleChartsModule,
-    WebcamModule
+    WebcamModule,
+    NgxOrgChartModule
     
   ],
   providers: [
