@@ -39,7 +39,7 @@ export class NavComponent implements OnInit {
     {
       label: 'Logout',
       icon: 'notes',
-      link: '',
+      link: '/login',
     },
   ];
 

@@ -95,7 +95,9 @@
     <ng-container *ngFor="let item of menuItems">
       <button mat-menu-item>
         <mat-icon class="mr">{{ item.icon }}</mat-icon>
-        <a class="five" routerLink="{{ item.link }}">{{ item.label }}</a>
+        <a class="five" (click)="logout()" routerLink="{{ item.link }}">{{
+          item.label
+        }}</a>
       </button>
       <mat-divider></mat-divider>
     </ng-container>
