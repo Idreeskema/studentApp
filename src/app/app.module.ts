@@ -41,7 +41,8 @@ import { NgxOrgChartModule } from 'ngx-org-chart';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatMenuModule } from '@angular/material/menu';
 import { CamComponent } from './cam/cam.component';
-import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { GoChartComponent } from './go-chart/go-chart.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -58,6 +59,7 @@ import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
     CameraComponent,
     OrgchartComponent,
     CamComponent,
+    GoChartComponent,
   ],
   imports: [
     BrowserModule,
@@ -89,7 +91,8 @@ import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
     MatDividerModule,
     MatMenuModule,
     MatInputModule,
-    MatProgressSpinnerModule
+    MatProgressSpinnerModule,
+    
   ],
   providers: [
     {
