@@ -12,6 +12,8 @@ import { MainLayoutComponent } from './layout/main-layout/main-layout.component'
 import { GChartComponent } from './g-chart/g-chart.component';
 import { CameraComponent } from './camera/camera.component';
 import { OrgchartComponent } from './orgchart/orgchart.component';
+import { CamComponent } from './cam/cam.component';
+
 const routes: Routes = [
   {
     path: 'login',
@@ -44,7 +46,7 @@ const routes: Routes = [
         canActivate: [AuthGuard],
       },
       {
-        component: CameraComponent,
+        component: CamComponent,
         path: 'camera',
         canActivate: [AuthGuard],
       },

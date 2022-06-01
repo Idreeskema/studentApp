@@ -9,6 +9,7 @@ import { DataService } from '../data.service';
   styleUrls: ['./g-chart.component.scss'],
 })
 export class GChartComponent implements OnInit {
+  isSpinnerDisplayed = false;
   webcamImage!: WebcamImage;
   //webcamImage: WebcamImage ;
 
@@ -40,10 +41,12 @@ export class GChartComponent implements OnInit {
     this.dataLoad();
   }
   public dataLoad() {
+    this.isSpinnerDisplayed = true;
     this.service.getlist(this.token).subscribe((result: any) => {
       console.log('graph', result[0].id);
       this.idData = result;
       console.log(this.idData);
+      this.isSpinnerDisplayed = false;
 
       const students = result;
       this.array = JSON.parse(JSON.stringify(result));

@@ -26,18 +26,22 @@ import { NgxCaptchaModule } from 'ngx-captcha';
 import { GooglePlaceModule } from 'ngx-google-places-autocomplete';
 import { MatTabsModule } from '@angular/material/tabs';
 import { UiComponent } from './ui/ui.component';
-import {MatSidenavModule} from '@angular/material/sidenav';
+import { MatSidenavModule } from '@angular/material/sidenav';
 import { BlankLayoutComponent } from './layout/blank-layout/blank-layout.component';
 import { MainLayoutComponent } from './layout/main-layout/main-layout.component';
 import { FooterComponent } from './footer/footer.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
-import {MatListModule} from '@angular/material/list';
+import { MatListModule } from '@angular/material/list';
 import { GChartComponent } from './g-chart/g-chart.component';
 import { GoogleChartsModule } from 'angular-google-charts';
 import { WebcamModule } from 'ngx-webcam';
 import { CameraComponent } from './camera/camera.component';
 import { OrgchartComponent } from './orgchart/orgchart.component';
 import { NgxOrgChartModule } from 'ngx-org-chart';
+import { MatDividerModule } from '@angular/material/divider';
+import { MatMenuModule } from '@angular/material/menu';
+import { CamComponent } from './cam/cam.component';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 @NgModule({
   declarations: [
     AppComponent,
@@ -53,6 +57,7 @@ import { NgxOrgChartModule } from 'ngx-org-chart';
     GChartComponent,
     CameraComponent,
     OrgchartComponent,
+    CamComponent,
   ],
   imports: [
     BrowserModule,
@@ -80,8 +85,11 @@ import { NgxOrgChartModule } from 'ngx-org-chart';
     MatListModule,
     GoogleChartsModule,
     WebcamModule,
-    NgxOrgChartModule
-    
+    NgxOrgChartModule,
+    MatDividerModule,
+    MatMenuModule,
+    MatInputModule,
+    MatProgressSpinnerModule
   ],
   providers: [
     {

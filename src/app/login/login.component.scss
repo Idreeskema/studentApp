@@ -17,7 +17,7 @@ td {
 //   margin-bottom: 40px;
 // }
 .example-card {
-      width: 400px;
+      width: 50%;
       
       margin: 15px;
       display: flex;
@@ -117,6 +117,9 @@ padding-top: 50px;
     flex-direction: column;
     padding-bottom: 100px;
     padding-top: 40px;
+  }
+  tr{
+    width: 50%;
   }
   button{
     margin-top: 20px;

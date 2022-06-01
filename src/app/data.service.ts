@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { Observable } from 'rxjs';
+import { delay, Observable } from 'rxjs';
 import { Router } from '@angular/router';
 @Injectable({
   providedIn: 'root',
@@ -14,9 +14,11 @@ export class DataService {
 
   getlist(token: any) {
     let httpHeaders = new HttpHeaders();
-    return this.http.get(this.url, {
-      headers: httpHeaders.set('token', token),
-    });
+    return this.http
+      .get(this.url, {
+        headers: httpHeaders.set('token', token),
+      })
+      .pipe(delay(3000));
   }
   addData(data: any): Observable<any> {
     console.log('check Data');

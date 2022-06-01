@@ -1,10 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
 //import '~ngx-org-chart/_theming.scss'
-//import "~ngx-org-chart/_theming.scss";
+import ~ngx-org-chart/_theming.scss
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .mat-tab-labels {
     display: flex;
     justify-content: center;
+  }
+  .mat-row:nth-child(even) .mat-cell {
+    background-color: #eee;
+  }
+  
+  .mat-row.highlight .mat-cell {
+    background-color: #00a775;
   }

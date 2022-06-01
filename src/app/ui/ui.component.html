@@ -1,48 +1,53 @@
-
-
 <mat-tab-group>
-    <mat-tab label="<"><img src="../../assets/aleksander-vlad-jiVeo0i1EB4-unsplash.jpg"></mat-tab>
-    <mat-tab label="-"><img src="../../assets/clement-helardot-95YRwf6CNw8-unsplash.jpg"></mat-tab>
-    <mat-tab label=">"><img src="../../assets/john-schnobrich-FlPc9_VocJ4-unsplash.jpg"></mat-tab>
-  </mat-tab-group>
+  <mat-tab label="<"
+    ><img src="../../assets/aleksander-vlad-jiVeo0i1EB4-unsplash.jpg"
+  /></mat-tab>
+  <mat-tab label="-"
+    ><img src="../../assets/clement-helardot-95YRwf6CNw8-unsplash.jpg"
+  /></mat-tab>
+  <mat-tab label=">"
+    ><img src="../../assets/john-schnobrich-FlPc9_VocJ4-unsplash.jpg"
+  /></mat-tab>
+</mat-tab-group>
 <div class="mat">
   <mat-card class="example-card1">
-    <img mat-card-image class="profile" src="../../assets/photo_1.jpg" alt="Photo ">
+    <img
+      mat-card-image
+      class="profile"
+      src="../../assets/photo_1.jpg"
+      alt="Photo "
+    />
     <mat-card-content>
       <p>
-        {{para}}
+        {{ para }}
       </p>
     </mat-card-content>
   </mat-card>
 </div>
 
-
-
-
-
-  <h1 class="team"> Our Team</h1>
-  <div class="cardSection">
-  <div *ngFor=" let a of data" >
-  <mat-card class="example-card" >
-    
-
-    <p class="images" style="text-align:center;">
-    <img mat-card-image mat-card-md-image class="myp"src="{{a.image}}" alt="Photo">
-    </p>
-    <mat-card-header>
-      
-      <mat-card-title>{{a.name}}</mat-card-title>
-    
-    </mat-card-header>
-    <div class="para">
-    <mat-card-content class="webdata">
-      
-        {{a.Designation}}
-        {{a.Designation1}}
-        {{a.Designation2}}
-      
-    </mat-card-content>
-  </div>
-  </mat-card>
+<h1 class="team">Our Team</h1>
+<div class="cardSection">
+  <div *ngFor="let a of data">
+    <mat-card class="example-card">
+      <p class="images" style="text-align: center">
+        <img
+          mat-card-image
+          mat-card-md-image
+          class="myp"
+          src="{{ a.image }}"
+          alt="Photo"
+        />
+      </p>
+      <mat-card-header>
+        <mat-card-title>{{ a.name }}</mat-card-title>
+      </mat-card-header>
+      <div class="para">
+        <mat-card-content class="webdata">
+          {{ a.Designation }}
+          {{ a.Designation1 }}
+          {{ a.Designation2 }}
+        </mat-card-content>
+      </div>
+    </mat-card>
   </div>
 </div>

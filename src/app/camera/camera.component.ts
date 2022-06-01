@@ -8,6 +8,12 @@ import { Observable, Subject } from 'rxjs';
   styleUrls: ['./camera.component.scss'],
 })
 export class CameraComponent implements OnInit {
+  webcamImage!: WebcamImage;
+  //webcamImage: WebcamImage ;
+
+  Image(webcamImage: WebcamImage) {
+    this.webcamImage = webcamImage;
+  }
   @Output() getPicture = new EventEmitter<WebcamImage>();
   showWebcam = true;
   isCameraExist = true;
